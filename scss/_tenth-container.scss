@@ -1,0 +1,83 @@
+.tenth-container {
+    background-color: rgb(95, 0, 220);
+    color: $secondary-text-color;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tenth-container-first-div {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        padding: 3rem;
+
+
+        .tenth-divs {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: $secondary-text-color;
+            }
+        }
+    }
+
+    .follow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* space between h1 and icons */
+        flex-wrap: wrap;
+        /* for responsiveness on smaller screens */
+        padding: 20px;
+        text-align: left;
+        padding-left: 3rem;
+        gap: 1rem;
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        a {
+            margin-left: 10px;
+            font-size: 1.5rem;
+            color: inherit;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .tenth-container {
+        flex-direction: column;
+        align-items: center;
+
+        .tenth-container-first-div {
+            flex-direction: column;
+            padding: 1.5rem;
+            gap: 2rem;
+        }
+
+        .follow {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            gap: 1rem;
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            a {
+                font-size: 1.4rem;
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+}

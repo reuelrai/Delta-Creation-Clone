@@ -1,0 +1,111 @@
+.container,
+.first-container,
+.second-container,
+.fourth-container,
+.fifth-container,
+.sixth-container,
+
+.eighth-container,
+.ninth-container,
+.tenth-container,
+.eleventh-container {
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+    background: #f7f7fd;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f7f7fd;
+}
+
+.first-container .introduction {
+    flex: 1 1 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .quote-btn {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        background: rgb(248, 55, 55);
+        border: none;
+        color: $secondary-text-color;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+}
+
+.first-container .introduction h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.first-container .image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.first-container .image img {
+
+    max-width: 100%;
+    height: auto;
+    max-height: 650px;
+}
+
+
+/* 🔁 Mobile-first stacking */
+@media (max-width: 768px) {
+    .first-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .first-container .introduction,
+    .first-container .image {
+        width: 100%;
+        flex: unset;
+    }
+
+    .first-container .introduction h1 {
+        font-size: 2rem;
+    }
+
+    .first-container .image img {
+        max-height: 480px;
+    }
+
+    .quote-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-container {
+        padding: 1rem;
+    }
+
+    .first-container .introduction h1 {
+        font-size: 1.6rem;
+    }
+
+    .quote-btn {
+        width: 100%;
+    }
+}

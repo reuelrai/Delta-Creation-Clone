@@ -1,0 +1,68 @@
+
+.eighth-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: #f4f4f4;
+    gap: 2rem;
+
+    .eighth-title {
+        width: 100%;
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: left; // This aligns it to the left
+            margin: 0;
+        }
+    }
+
+    .blog-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .blog-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            span {
+                color: #f83737;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: auto;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+
+        .eighth-title h1 {
+            font-size: 2rem;
+        }
+
+        .blog-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

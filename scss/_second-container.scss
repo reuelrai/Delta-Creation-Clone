@@ -1,0 +1,40 @@
+
+.second-container,
+.fourth-container .cards,
+.sixth-container .experience-boxes,
+.eighth-container .blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second-container .box,
+.fourth-container .cards-box,
+.sixth-container .boxes,
+.eighth-container .blog-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.second-container {
+    display: flex;
+    gap: 2rem;
+    /* spacing between the boxes */
+    align-items: stretch;
+
+    /* this is key */
+    .box {
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 4px;
+        padding-top: 32px;
+        padding-right: 32px;
+        padding-bottom: 32px;
+        padding-left: 32px;
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+}

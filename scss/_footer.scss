@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #262626;
+    color: $secondary-text-color;
+    padding: 3rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto; // Let it grow with content
+        padding: 1.5rem;
+        text-align: center;
+    }
+}
